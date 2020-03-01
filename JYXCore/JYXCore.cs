@@ -14,6 +14,8 @@ namespace JYXCore
 
             var res = JSON.JSONLex.LexJSON(source);
             var parsed = JSON.JSONParse.ParseJSON(res.ToArray());
+
+            Console.WriteLine(XML.SerializeXML.Serialize(parsed));
         }
     }
 }
