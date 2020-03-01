@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XYJ", "XYJ\XYJ.csproj", "{5807E074-0F94-42CF-8545-6177569D66BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JYXCore", "JYXCore\JYXCore.csproj", "{447AFCD1-7898-4723-8EF1-92058F9916EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5807E074-0F94-42CF-8545-6177569D66BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5807E074-0F94-42CF-8545-6177569D66BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5807E074-0F94-42CF-8545-6177569D66BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5807E074-0F94-42CF-8545-6177569D66BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{447AFCD1-7898-4723-8EF1-92058F9916EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447AFCD1-7898-4723-8EF1-92058F9916EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447AFCD1-7898-4723-8EF1-92058F9916EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447AFCD1-7898-4723-8EF1-92058F9916EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5B63BCC-0A5B-4D81-807A-CF984759DEFB}
+	EndGlobalSection
+EndGlobal

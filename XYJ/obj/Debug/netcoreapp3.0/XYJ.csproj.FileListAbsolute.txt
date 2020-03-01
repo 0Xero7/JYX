@@ -1,0 +1,14 @@
+C:\Users\smpsm\source\repos\XYJ\XYJ\bin\Debug\netcoreapp3.0\XYJ.exe
+C:\Users\smpsm\source\repos\XYJ\XYJ\bin\Debug\netcoreapp3.0\XYJ.deps.json
+C:\Users\smpsm\source\repos\XYJ\XYJ\bin\Debug\netcoreapp3.0\XYJ.runtimeconfig.json
+C:\Users\smpsm\source\repos\XYJ\XYJ\bin\Debug\netcoreapp3.0\XYJ.runtimeconfig.dev.json
+C:\Users\smpsm\source\repos\XYJ\XYJ\bin\Debug\netcoreapp3.0\XYJ.dll
+C:\Users\smpsm\source\repos\XYJ\XYJ\bin\Debug\netcoreapp3.0\XYJ.pdb
+C:\Users\smpsm\source\repos\XYJ\XYJ\bin\Debug\netcoreapp3.0\JYXCore.dll
+C:\Users\smpsm\source\repos\XYJ\XYJ\bin\Debug\netcoreapp3.0\JYXCore.pdb
+C:\Users\smpsm\source\repos\XYJ\XYJ\obj\Debug\netcoreapp3.0\XYJ.csprojAssemblyReference.cache
+C:\Users\smpsm\source\repos\XYJ\XYJ\obj\Debug\netcoreapp3.0\XYJ.AssemblyInfoInputs.cache
+C:\Users\smpsm\source\repos\XYJ\XYJ\obj\Debug\netcoreapp3.0\XYJ.AssemblyInfo.cs
+C:\Users\smpsm\source\repos\XYJ\XYJ\obj\Debug\netcoreapp3.0\XYJ.csproj.CopyComplete
+C:\Users\smpsm\source\repos\XYJ\XYJ\obj\Debug\netcoreapp3.0\XYJ.dll
+C:\Users\smpsm\source\repos\XYJ\XYJ\obj\Debug\netcoreapp3.0\XYJ.pdb

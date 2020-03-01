@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "XYJ/1.0.0": {
+        "dependencies": {
+          "JYXCore": "1.0.0"
+        },
+        "runtime": {
+          "XYJ.dll": {}
+        }
+      },
+      "JYXCore/1.0.0": {
+        "runtime": {
+          "JYXCore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "XYJ/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JYXCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

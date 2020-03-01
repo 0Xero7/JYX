@@ -1,0 +1,10 @@
+﻿{
+	"Name" : "Soumya",
+	"Age": 21,
+	"Single" : true,
+	"GPA" : [ 7, 8, 8, 8, 9 ],
+	"Favorites" : {
+		"Math" : 10,
+		"CS" : 10
+	}
+}

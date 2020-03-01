@@ -1,0 +1,8 @@
+C:\Users\smpsm\source\repos\XYJ\JYXCore\bin\Debug\netcoreapp3.0\JYXCore.deps.json
+C:\Users\smpsm\source\repos\XYJ\JYXCore\bin\Debug\netcoreapp3.0\JYXCore.dll
+C:\Users\smpsm\source\repos\XYJ\JYXCore\bin\Debug\netcoreapp3.0\JYXCore.pdb
+C:\Users\smpsm\source\repos\XYJ\JYXCore\obj\Debug\netcoreapp3.0\JYXCore.csprojAssemblyReference.cache
+C:\Users\smpsm\source\repos\XYJ\JYXCore\obj\Debug\netcoreapp3.0\JYXCore.AssemblyInfoInputs.cache
+C:\Users\smpsm\source\repos\XYJ\JYXCore\obj\Debug\netcoreapp3.0\JYXCore.AssemblyInfo.cs
+C:\Users\smpsm\source\repos\XYJ\JYXCore\obj\Debug\netcoreapp3.0\JYXCore.dll
+C:\Users\smpsm\source\repos\XYJ\JYXCore\obj\Debug\netcoreapp3.0\JYXCore.pdb
