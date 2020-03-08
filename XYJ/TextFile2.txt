@@ -1,0 +1,11 @@
+﻿<note>
+	<cc>
+		<cc>yeet</cc>
+		<cc>oho</cc>
+		<cc>wtf man</cc>
+	</cc>	
+	<to>Tove</to>	
+	<from>Jani</from>
+	<heading>Reminder</heading>
+	<body>Don't forget me this weekend!</body>
+</note>

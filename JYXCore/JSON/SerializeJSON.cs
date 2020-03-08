@@ -2,20 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace JYXCore.XML
+namespace JYXCore.JSON
 {
-    public static class SerializeXML
+    public static class SerializeJSON
     {
         public static string Serialize(Dictionary<string, dynamic> ast)
         {
-            string res = "<?xml version=\"1.0\" encoding=\"UTF - 8\"?>\n" +
-                         "<root>\n";
-
-            res += SerializeObject(ast, 1, "   ");
-
-            res += "</root>";
-
-            return res;
+            return $"{{\n{SerializeObject(ast, 1, "   ")}}}";
         }
 
         private static string SerializeObject(Dictionary<string, dynamic> ast, int indent, string indentText = "\t")
@@ -29,25 +22,25 @@ namespace JYXCore.XML
                 switch (v.Value)
                 {
                     case Common.ASTString s:
-                        res += $"{wp}<{v.Key}>{s.value}</{v.Key}>\n";
+                        res += $"{wp}\"{v.Key}\" : \"{s.value}\",\n";
                         break;
                     case Common.ASTNumber n:
-                        res += $"{wp}<{v.Key}>{n.number}</{v.Key}>\n";
+                        res += $"{wp}\"{v.Key}\" : {n.number},\n";
                         break;
                     case Common.ASTBoolean b:
-                        res += $"{wp}<{v.Key}>{(b.boolean ? "true" : "false")}</{v.Key}>\n";
+                        res += $"{wp}\"{v.Key}\" : {(b.boolean ? "true" : "false")},\n";
                         break;
 
                     case Dictionary<string, dynamic> d:
-                        res += $"{wp}<{v.Key}>\n";
+                        res += $"{wp}\"{v.Key}\" : {{\n";
                         res += SerializeObject(d, indent + 1, indentText);
-                        res += $"{wp}</{v.Key}>\n";
+                        res += $"{wp}}},\n";
                         break;
 
                     case List<dynamic> l:
-                        res += $"{wp}<{v.Key}>\n";
-                        res += SerializeCollection(l, v.Key, indent + 1, indentText);
-                        res += $"{wp}</{v.Key}>\n";
+                        res += $"{wp}\"{v.Key}\" : [\n";
+                        res += SerializeCollection(l, indent + 1, indentText);
+                        res += $"{wp}],\n";
                         break;
                 }
             }
@@ -55,7 +48,7 @@ namespace JYXCore.XML
             return res;
         }
 
-        private static string SerializeCollection(List<dynamic> ast, string parent, int indent, string indentText = "\t")
+        private static string SerializeCollection(List<dynamic> ast, int indent, string indentText = "\t")
         {
             string wp = "";
             for (int i = 0; i < indent; ++i) wp += indentText;
@@ -66,25 +59,25 @@ namespace JYXCore.XML
                 switch (v)
                 {
                     case Common.ASTString s:
-                        res += $"{wp}<{parent}>{s.value}</{parent}>\n";
+                        res += $"{wp}\"{s.value}\",\n";
                         break;
                     case Common.ASTNumber n:
-                        res += $"{wp}<{parent}>{n.number}</{parent}>\n";
+                        res += $"{wp}{n.number},\n";
                         break;
                     case Common.ASTBoolean b:
-                        res += $"{wp}<{parent}>{(b.boolean ? "true" : "false")}</{parent}>\n";
+                        res += $"{wp}{(b.boolean ? "true" : "false")},\n";
                         break;
 
                     case Dictionary<string, dynamic> d:
-                        res += $"{wp}<{parent}>\n";
+                        res += $"{wp}{{\n";
                         res += SerializeObject(d, indent + 1, indentText);
-                        res += $"{wp}</{parent}>\n";
+                        res += $"{wp}}},\n";
                         break;
 
                     case List<dynamic> l:
-                        res += $"{wp}<{parent}>\n";
-                        res += SerializeCollection(l, v, indent + 1, indentText);
-                        res += $"{wp}</{parent}>\n";
+                        res += $"{wp}[\n";
+                        res += SerializeCollection(l, indent + 1, indentText);
+                        res += $"{wp}],\n";
                         break;
                 }
             }
